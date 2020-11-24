@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import ToggleComponent from './ToggleComponent';
+// import Enzyme, { shallow } from 'enzyme';
+// import Adapter from 'enzyme-adapter-react-16';
+// import ToggleComponent from './ToggleComponent';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -15,15 +17,16 @@ describe('ToggleComponent', () => {
   });
 });
 
-it('Should be false', () => {
-  const test = 'Shubham';
-  expect(test).toBe('Shubham');
-});
+// it('Should be false', () => {
+//   const test = 'Shubham';
+//   expect(test).toBe('Ankit');
+// });
 
-describe('ToggleComponent', () => {
-  it('should show the text', () => {
-  const toggleInstance = shallow(<ToggleComponent />);
-  const element = toggleInstance.find('div div');
-  expect(element.text()).toBe('This will be toggled');
- });
-});
+// Enzyme.configure({ adapter: new Adapter() });
+// describe('ToggleComponent', () => {
+//   it('should show the text', () => {
+//   const toggleInstance = shallow(<ToggleComponent />);
+//   const element = toggleInstance.find('div div');
+//   expect(element.text()).toBe('This will be toggled');
+//  });
+// });
