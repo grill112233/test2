@@ -9,7 +9,7 @@ it('renders without crashing', () => {
 
 var assert = require('assert');
 
-const calculate = require("App.js").default
+const calculate = require("calculator.js").default
 
 describe('Test Calculator', function () {
     describe('functions plus', function () {
