@@ -17,11 +17,12 @@ class App extends Component {
       </div>
     );
   }
+  toggle() {
+    return (
+        <ToggleComponent />
+    );
+  }
+
 }
 
-function App() {
-  return (
-      <ToggleComponent />
-  );
-}
 export default App;
