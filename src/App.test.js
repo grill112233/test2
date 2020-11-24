@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Enzyme, { shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
 import ToggleComponent from './ToggleComponent';
 
 it('renders without crashing', () => {
@@ -17,12 +15,11 @@ describe('ToggleComponent', () => {
   });
 });
 
-// it('Should be false', () => {
-//   const test = 'Shubham';
-//   expect(test).toBe('Ankit');
-// });
+it('Should be false', () => {
+  const test = 'Shubham';
+  expect(test).toBe('Shubham');
+});
 
-Enzyme.configure({ adapter: new Adapter() });
 describe('ToggleComponent', () => {
   it('should show the text', () => {
   const toggleInstance = shallow(<ToggleComponent />);
