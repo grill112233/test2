@@ -36,10 +36,5 @@ class Calculator {
   }
 }
 
-const calculator = new Calculator
-console.log(calculator.devide(2, 2))
-
-exports.default = calculator
-
-
+export default Calculator;
 export default App;
